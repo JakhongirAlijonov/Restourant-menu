@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap');
+
+:root{
+    --main--text-color:#fff;
+    --hover-color:#FF514E;
+    --header-back:#18171A;
+    --card-bg:#EBEBEB;
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+*{
+    font-size: 10px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem  3.2rem;
+    background-color: var(--header-back);
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+  
+    font-weight: 700;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main--text-color);
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--hover-color);
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-item {
+    list-style: none;
+    margin-left: 2.5rem;
+}
+
+.header-link {
+    text-decoration: none;
+    color: var(--main--text-color);
+    transition: .3s ease;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header-link:hover {
+    color: var(--hover-color);
+}
+
+.hero {
+    background: url('./banner.jpg');
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: 
+    center;
+    color: var(--main--text-color);
+}
+.hero_title{
+    font-size: 5rem;
+
+}
+.menu_title{
+    text-align: center;
+margin: 2rem 0;
+font-size: 2.4rem;
+}
+.menu_wrapper{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr) );
+
+}
+.menu_card{
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    transition: .3s ease;
+    cursor: pointer;
+    padding: 1rem;
+}
+.menu_card:hover{
+    background-color: var(--card-bg);
+}
