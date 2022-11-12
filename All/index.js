@@ -10,7 +10,7 @@ const  fetchData= async (url)=>{
         loader.classList.remove('hidden')
         const request = await fetch(url, {
             
-            referrerPolicy: "unsafe_url" 
+            referrerPolicy: "unsafe-url" 
         });
         const datas = await request.json()
         getData(datas)
