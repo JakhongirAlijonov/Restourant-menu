@@ -47,7 +47,6 @@ loader.classList.add('hidden')
 search.addEventListener('input' , (e)=>{
     let searchStr = e.target.value.toLowerCase()
     for (i = 1; i < wrapper.childNodes.length; i++) {
-        console.log(wrapper.childNodes[i].getAttribute('id'));
         const card = wrapper.childNodes[i].getAttribute('id').toLowerCase()
         if (card.includes(searchStr)) {
             wrapper.childNodes[i].classList.remove('hidden')
