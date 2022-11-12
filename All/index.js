@@ -15,7 +15,7 @@ const  fetchData= async (url)=>{
 
     } catch (err) {
         console.log(err.message)
-        // box.innerHTML = ` <h1> Server is broken </h1>`
+        loader.innerHTML = ` <h1 class='error'> Oop! We have a problem with server check it soon ! </h1>`
     }
 }
 
